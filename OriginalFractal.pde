@@ -19,10 +19,10 @@ public void myFractal(int x, int y, int siz)
 	}
 	else 
 	{
-		myFractal(x-siz/2, y, siz/2);
-		myFractal(x+siz/2, y, siz/2);
-		myFractal(x, y+siz/4, siz/2);
-		myFractal(x, y-siz/4, siz/2);
+		myFractal((int)x-siz/2, y, (int)siz/2);
+		myFractal((int)x+siz/2, y, (int)siz/2);
+		myFractal(x,(int)(y+siz/4), (int)siz/2);
+		myFractal(x, (int)(y-siz/4), (int)siz/2);
 	}
 
 }
