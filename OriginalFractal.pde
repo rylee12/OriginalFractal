@@ -5,17 +5,17 @@ public void setup()
 public void draw()
 {
 	background(0, 0, 0);
-	stroke(0, 0, 0);
+	//stroke(0, 0, 0);
 	myFractal(250, 250, 700);
 }
 public void myFractal(int x, int y, int siz)
 {
-	if (siz <= 7)
+	if (siz <= 5)
 	{
 		//fill(0, 255, 0);
 		fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
 		ellipse(x, y, siz, siz);
-		ellipse(x + siz, y, siz, siz);
+		ellipse(x - siz, y, siz, siz);
 	}
 	else 
 	{
